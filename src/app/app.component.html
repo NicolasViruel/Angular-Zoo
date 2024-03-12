@@ -9,7 +9,10 @@
 <a [routerLink]="['/tienda']">Tienda </a>
 <a [routerLink]="['/contacto']">Contacto </a>
 
-<span *ngIf="emailContacto"><strong>Email de Contacto:</strong>{{emailContacto}}</span>
+<span *ngIf="emailContacto"><strong>Email de Contacto:</strong>{{emailContacto}}
+  <button (click)="borrarEmail()">Eliminar email de contacto</button>
+</span>
+
 <hr>
 <!-- toma el componente que esta asociado a esta ruta y nos los carga dinamicante-->
 <router-outlet></router-outlet> 
