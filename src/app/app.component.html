@@ -2,5 +2,14 @@
   {{title}}
 </h1>
 
-<tienda></tienda>
 
+<a [routerLink]="['/home']">Inicio </a>
+<a [routerLink]="['/animales']">Animales </a>
+<a [routerLink]="['/cuidadores']">Cuidadores </a>
+<a [routerLink]="['/tienda']">Tienda </a>
+<a [routerLink]="['/contacto']">Contacto </a>
+
+<span *ngIf="emailContacto"><strong>Email de Contacto:</strong>{{emailContacto}}</span>
+<hr>
+<!-- toma el componente que esta asociado a esta ruta y nos los carga dinamicante-->
+<router-outlet></router-outlet> 
