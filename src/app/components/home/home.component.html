@@ -1,7 +1,35 @@
-<div class="col-lg-8 col-lg-offset-2" >
+<!-- <div class="col-lg-8 col-lg-offset-2" >
     <h1>{{title}}</h1>
     <p>Disfruta de los animales mas exocitos de nuestro Zoologico</p>
     <p>
-        <a [routerLink]="['']" class="btn btn-primary btn-lg"></a>
+        <a [routerLink]="['/animales']" role="button" class="btn btn-primary btn-lg">
+            Ver animales
+        </a>
+        <a [routerLink]="['/cuidadores']" role="button" class="btn btn-success btn-lg">
+            Ver cuidadores
+        </a>
+        <a [routerLink]="['/contacto']" role="button" class="btn btn-warning btn-lg">
+            Contacta con nosotros
+        </a>
     </p>
+</div> -->
+
+  <div class="col-lg-8 jumbotron mt-2 mx-5 " >
+  <div class="bg-light p-5 m-1 ">
+    <h1 class="display-4">Bienvenido a NGZOO!</h1>
+    <p class="lead">Disfruta de los animales mas exocitos de nuestro Zoologico.</p>
+    <hr class="my-3">
+    <p>Un lugar para aprender mas sobre nuestros animales favoritos</p>
+    <p>
+        <a [routerLink]="['/animales']" role="button" class="btn btn-primary btn-md mx-2">
+            Ver animales
+        </a>
+        <a [routerLink]="['/cuidadores']" role="button" class="btn btn-success btn-md mx-2">
+            Ver cuidadores
+        </a>
+        <a [routerLink]="['/contacto']" role="button" class="btn btn-warning btn-md mx-2">
+            Contacta con nosotros
+        </a>
+    </p>
+  </div>
 </div>
