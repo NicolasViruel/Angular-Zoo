@@ -1,4 +1,7 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
+declare var jQuery:any;
+declare var $:any;
+
 
 @Component({
     selector: 'tienda',
@@ -6,7 +9,7 @@ import { Component } from "@angular/core";
     styleUrls: ['./tienda.component.css']
 })
 
-export class TiendaComponent {
+export class TiendaComponent implements OnInit {
     public titulo: string
     public nombreDelParque: string;
     public miParque: any
@@ -15,6 +18,16 @@ export class TiendaComponent {
         this.titulo = 'Esta es la tienda';
         this.nombreDelParque = '';
     }
+
+    ngOnInit(): void {
+        $('#textojq').hide();
+        $('#botonjq').click(function(){
+            console.log('click desde Jquery');
+          $('#textojq').slideToggle();  
+        });
+        $("#caja").dotdotdot({}); 
+    }
+
 
     mostrarNombre(){
         console.log(this.nombreDelParque);
