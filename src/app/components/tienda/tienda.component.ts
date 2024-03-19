@@ -1,18 +1,17 @@
 import { Component, OnInit } from "@angular/core";
-declare var jQuery:any;
-declare var $:any;
-
+// import * as $ from 'jquery';
+// import 'dotdotdot-js'; 
 
 @Component({
     selector: 'tienda',
-    templateUrl: './tienda.component.html', //aca podria ir el codigo html en caso que quisieramos
+    templateUrl: './tienda.component.html',
     styleUrls: ['./tienda.component.css']
 })
 
 export class TiendaComponent implements OnInit {
-    public titulo: string
+    public titulo: string;
     public nombreDelParque: string;
-    public miParque: any
+    public miParque: any;
 
     constructor() {
         this.titulo = 'Esta es la tienda';
@@ -20,20 +19,18 @@ export class TiendaComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        $('#textojq').hide();
-        $('#botonjq').click(function(){
-            console.log('click desde Jquery');
-          $('#textojq').slideToggle();  
-        });
-        $("#caja").dotdotdot({}); 
+        // $('#textojq').hide();
+        // $('#botonjq').click(function(){
+        //     console.log('click desde Jquery');
+        //     $('#textojq').slideToggle();  
+        // });
     }
 
-
-    mostrarNombre(){
+    mostrarNombre(): void {
         console.log(this.nombreDelParque);
     }
 
-    verDatosPadre(event: any){
+    verDatosPadre(event: any): void {
         console.log(event);
         this.miParque = event
     }
