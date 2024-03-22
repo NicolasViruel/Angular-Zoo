@@ -13,7 +13,6 @@ import { KeepersComponent } from './components/keepers/keepers.component';
 import { HomeComponent } from './components/home/home.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +21,7 @@ import { HomeComponent } from './components/home/home.component';
     AnimalsComponent,
     ContactComponent,
     KeepersComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
