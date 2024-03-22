@@ -12,6 +12,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { KeepersComponent } from './components/keepers/keepers.component';
 import { HomeComponent } from './components/home/home.component';
 
+// importar nuestro nuevo modulo
+import { ModuloEmailModule } from './components/moduloEmail/components/moduloemail.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { HomeComponent } from './components/home/home.component';
     BrowserModule,
     FormsModule,
     routing,
+    ModuloEmailModule
   ],
   providers: [
     appRoutingProviders,
