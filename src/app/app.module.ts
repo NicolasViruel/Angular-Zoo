@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import {routing, appRoutingProviders} from "./app.routing";
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 //componentes
@@ -14,6 +15,8 @@ import { HomeComponent } from './components/home/home.component';
 
 // importar nuestro nuevo modulo
 import { ModuloEmailModule } from './components/moduloEmail/components/moduloemail.module';
+import { AdminModule } from './admin/admin.module';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import { ModuloEmailModule } from './components/moduloEmail/components/moduloema
     BrowserModule,
     FormsModule,
     routing,
-    ModuloEmailModule
+    HttpClientModule,
+    ModuloEmailModule,
+    AdminModule,
   ],
   providers: [
     appRoutingProviders,
