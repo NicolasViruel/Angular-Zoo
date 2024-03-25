@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './add.component.html',
 })
 export class AddComponent {
-  title = 'Add';
+  title = 'Añadir';
 
 
 
