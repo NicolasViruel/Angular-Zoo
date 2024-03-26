@@ -1,3 +1,68 @@
-/* .navigation{
-    margin-top: 12px;
-} */
+.boton_transiciones {
+    padding: 10px 20px;
+    background: #ffcccc; /* Rosa pastel */
+    color: #333; /* Gris oscuro */
+    border-radius: 20px;
+    border: 1px solid #ff9999; /* Rosa claro */
+    transition: background 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    cursor: pointer;
+    outline: none;
+}
+
+.boton_transiciones:hover {
+    background: #ffb3b3; /* Rosa pastel más oscuro */
+    color: #fff; /* Blanco */
+    transform: scale(1.05);
+}
+
+.boton_transiciones:active {
+    transform: scale(0.95);
+}
+
+.caja_animada{
+    margin-top: 15px;
+    background: green;
+    border: 5px solid black;
+    width: 200px;
+    height: 200px;
+
+    /* animation-name: rotacion;
+    animation-duration: 10s;
+    animation-iteration-count: infinite; */
+}
+
+@keyframes rotacion{
+    from {
+        margin-left: 0px;
+        transform: rotate(0deg);
+     }
+    to {
+        transform: rotate(360deg);
+        margin-left: 600px;
+    }
+}
+
+@keyframes deslizamiento{
+    0% {
+        margin-left: 0px;
+     }
+    50% {
+        margin-left: 400px;
+        background: red;
+        border-radius: 100px;
+    }
+    100%{
+        background: yellow;
+        border-radius: 0px;
+    }
+}
+
+@keyframes deslizamiento1{
+    from {
+
+     }
+    to {
+        margin-left: 400px;
+        background: red;
+    }
+}
