@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { trigger, state, style, transition, animate } from "@angular/animations";
-
+import { fadeIn } from '../animation';
 
 import 'dotdotdot-js';
 declare var jQuery:any;
@@ -23,7 +23,8 @@ declare var $:any;
             })),
             transition('inactive => active', animate('300ms linear')),
             transition('active => inactive', animate('300ms linear')),
-        ])
+        ]),
+        fadeIn
     ]
 })
 
