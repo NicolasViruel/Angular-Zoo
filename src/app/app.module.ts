@@ -16,6 +16,10 @@ import { HomeComponent } from './components/home/home.component';
 // importar nuestro nuevo modulo
 import { ModuloEmailModule } from './components/moduloEmail/components/moduloemail.module';
 import { AdminModule } from './admin/admin.module';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+
+
 
 
 @NgModule({
@@ -27,6 +31,8 @@ import { AdminModule } from './admin/admin.module';
     ContactComponent,
     KeepersComponent,
     HomeComponent,
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
